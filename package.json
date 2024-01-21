@@ -1,0 +1,19 @@
+{
+  "name": "sdtask",
+  "version": "1.0.0",
+  "description": "a crud application task",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app/server.js"
+  },
+  "author": "suresh dussa",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.2",
+    "express": "^4.18.2",
+    "mongoose": "^8.1.0",
+    "morgan": "^1.10.0"
+  }
+}
