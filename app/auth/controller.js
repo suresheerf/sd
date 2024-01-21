@@ -1,6 +1,6 @@
 import catchAsync from '../utils/catchAsync.js';
 import signToken from './service.js';
-export const login = catchAsync(async()=>{
+export const login = catchAsync(async(req,res,next)=>{
 
     if(req.body.email === 'admin@gmail.com' && req.body.password === 'admin@123'){
         const token = signToken({user:'admin'});
