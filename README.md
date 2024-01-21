@@ -38,3 +38,5 @@
  - run `npm install`
  - copy example.env and  past ,rename it to  `.env` update values accordingly
  - run `npm start`
+
+ - [postman collection](https://documenter.getpostman.com/view/27932492/2s9YymFPZh)
