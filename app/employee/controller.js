@@ -20,13 +20,19 @@ export const getOne = catchAsync(async(req,res,next)=>{
 
 export const getAll = catchAsync(async(req,res,next)=>{
     const page = req.query.page || 1;
-    const perPage = 20;
+    const perPage = 10;
     const skip = (page-1)* perPage;
     let sort={};
     let match={};
     for(let key in req.query){
 
-        if(key === 'sortBy'){
+        if(key === 'sortBy'&& ['employeeId',
+        'firstName',
+        'lastName',
+        'email',
+        'dateOfBirth',
+        'department',
+        'position'].includes(req.query.sortBy)){
             if(req.query.sortType === 'ascending') sort= {[req.query.sortBy]:1}
             else sort= {[req.query.sortBy]:-1}
         }
