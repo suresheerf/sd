@@ -1,5 +1,14 @@
 # sd
 
+## to run in local 
+ - clone repo
+ - run `npm install`
+ - copy example.env and  past ,rename it to  `.env` update values accordingly
+ - run `npm start`
+
+ - [postman collection](https://documenter.getpostman.com/view/27932492/2s9YymFPZh)
+
+
 ## auth
 - for token send post request `/auth/login` with `{email:"admin@gmail.com",password:"admin@123"}` as body.
 
@@ -31,12 +40,3 @@
         'department',
         'position'```
 - example query would be `/emplyees/all?page=2&sortBy=firstName&sortType=ascending&firstName=john`
-
-
-## to run in local 
- - clone repo
- - run `npm install`
- - copy example.env and  past ,rename it to  `.env` update values accordingly
- - run `npm start`
-
- - [postman collection](https://documenter.getpostman.com/view/27932492/2s9YymFPZh)
