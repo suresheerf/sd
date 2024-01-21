@@ -35,5 +35,6 @@
 
 ## to run in local 
  - clone repo
+ - run `npm install`
  - copy example.env and  past ,rename it to  `.env` update values accordingly
  - run `npm start`
