@@ -19,11 +19,11 @@ server.on("error",(err)=>{
 })
 
 process.on('uncaughtException',(err)=>{
-    console.log("error: ",err);
+    console.log("uncaughtException: ",err);
     process.exit(1);
 });
 
 process.on('unhandledRejection',(err)=>{
-    console.log("error: ",err);
+    console.log("unhandledRejection: ",err);
     process.exit(1);
 })
