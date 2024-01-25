@@ -18,7 +18,7 @@
 ### send get to `/employees/:employeeId` to get a employee
 ### send put to `/employees/:employeeId` to update a employee
 ### send delete to `/employees/:employeeId` to delete a employee
-### send get to `/employess/all` to list all employees.
+### send get to `/employees/all` to list all employees.
  - this endpoint is paginated send `page` query parameter to get particular page.
  - to sort use `sortBy` and `sortType` query parameters
  - possible values for sortBy is
@@ -39,4 +39,4 @@
         'email',
         'department',
         'position'```
-- example query would be `/emplyees/all?page=2&sortBy=firstName&sortType=ascending&firstName=john`
+- example query would be `/employees/all?page=2&sortBy=firstName&sortType=ascending&firstName=john`
